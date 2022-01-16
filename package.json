@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
+    "dev": "npm run storybook",
     "lint": "npm run lint:script && npm run lint:style",
     "lint:script": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:style": "stylelint ./src",
+    "storybook": "start-storybook -p 5000 -s ./src/assets -c .storybook",
+    "build-sb-docs": "build-storybook -s ./src/assets -c .storybook -o docs",
     "test": "jest --maxWorkers=2",
     "test:watch": "npm run test --watch",
     "test:coverage": "jest --coverage --colors --maxWorkers=2"
