@@ -13,7 +13,9 @@
     "build-sb-docs": "build-storybook -s ./src/assets -c .storybook -o docs",
     "test": "jest --maxWorkers=2",
     "test:watch": "npm run test --watch",
-    "test:coverage": "jest --coverage --colors --maxWorkers=2"
+    "test:coverage": "jest --coverage --colors --maxWorkers=2",
+    "hygen": "hygen",
+    "component:new": "hygen component with-prompt"
   },
   "author": "Joni Rinta-Kahila",
   "license": "MIT",
