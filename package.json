@@ -12,6 +12,8 @@
     "url": "git+https://github.com/JoniRinta-Kahila/reactTsComponentLibraryBoilerplate.git"
   },
   "main": "index.js",
+  "module": "index.esm.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "dev": "npm run storybook",
@@ -26,10 +28,19 @@
     "test:watch": "npm run test --watch",
     "test:coverage": "jest --coverage --colors --maxWorkers=2",
     "hygen": "hygen",
-    "component:new": "hygen component with-prompt"
+    "component:new": "hygen component with-prompt",
+    "publish": "npx semantic-release --no-ci"
   },
   "author": "Joni Rinta-Kahila",
   "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "react-icons": "^4.3.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@commitlint/cli": "^16.0.2",
