@@ -35,6 +35,7 @@
     "webpack": "^5.66.0"
   },
   "dependencies": {
+    "@types/node": "^17.0.8",
     "node-sass": "^7.0.1",
     "prettier": "^2.5.1"
   }
